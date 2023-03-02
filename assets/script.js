@@ -30,9 +30,9 @@ function displayInfo(city){
   convertNameToData();
   function convertNameToData(){
     // DISCLAIMER: it seems the weather api can use by defualt names instead of coordinates but converted it because the assignemnt asked for it 
-    var geoApi = "https://api.openweathermap.org/data/2.5/forecast?q="+city+",US&appid=b117dcb8d3b6343f236365cabe485360";
-    console.log(geoApi);
-    fetch(geoApi)
+    var weatherApi = "https://api.openweathermap.org/data/2.5/forecast?q="+city+",US&appid=b117dcb8d3b6343f236365cabe485360";
+    console.log(weatherApi);
+    fetch(weatherApi)
     .then(function(response){
       if (response.status === 200) {
         return response.json();
