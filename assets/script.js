@@ -10,7 +10,7 @@ if (localStorage.getItem("searchedHistory") != null) {
   searchedHistory = JSON.parse(localStorage.getItem("searchedHistory"));
   displayInfo(searchedHistory[0]);
 } else{
-  displayInfo("Fairfield");
+  displayInfo("Storrs");
 }
 // renders the search history on load based on local storage
 renderHistory();
