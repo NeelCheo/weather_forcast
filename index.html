@@ -2,8 +2,7 @@
 <html lang="en">
 <!-- data for the app -->
 <!-- https://openweathermap.org/forecast5 -->
-<!-- geocoding data for app -->
-<!-- https://openweathermap.org/api/geocoding-api -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,36 +18,92 @@
     <!-- search box -->
     <form class="row">
       <label for="city-search">Search for a City:</label>
-      <input id="search-input" type="text" class="form-input col-12" name="city-search" autofocus="true" placeholder="Fairfield"/>
+      <input id="search-input" type="text" class="form-input col-12" name="city-search" autofocus="true"
+        placeholder="Fairfield" />
       <button id="submit-button" class="btn btn-block col-12">Search</button>
     </form>
     <!-- history section-->
-    <div id="search-history" class="row">
-      <P>place holder text area for: SEARCH HISTORY</P>
-    </div>
+    <div id="search-history" class="row"></div>
   </div>
-
   <!-- right column that has the information  -->
   <div class="col-9">
     <!-- main "today" display info -->
-    <div id="today-info" class="row">
-     <p>place holder text area for: TODAY MAIN info</p>
+    <div class="card">
+      <div id="date" class="card-header"> name/date</div>
+      <ul class="list-group list-group-flush">
+        <li  class="list-group-item"><img id="icon" src="http://openweathermap.org/img/wn/01n@2x.png" width="50px" height="50px" alt=""></li>
+        <li id="temp" class="list-group-item">temp</li>
+        <li id="wind" class="list-group-item">wind</li>
+        <li id="humidity" class="list-group-item">humidity</li>
+      </ul>
     </div>
-    <!-- 5 day display area -->
-    <!-- will be populated using javascript -->
     <h5>5-Day Forcast:</h5>
-    <div id="5-day-info" calss="row">
-      place holder text area for: NEXT 5 DAY info
+    <div id="5-day-info" class="row">
+      <!-- repaeat this div 5 times for data for display!!!!!!!!!!!-->
+      <div class="card" style="width: 18rem;">
+        <div id="date5" class="card-header">
+          Date
+        </div>
+        <ul class="list-group list-group-flush">
+          <li  class="list-group-item"><img id="icon5" src="http://openweathermap.org/img/wn/01n@2x.png" width="40px" height="40px" alt=""></li>
+          <li id="temp5" class="list-group-item">temp</li>
+          <li id="wind5" class="list-group-item">wind</li>
+          <li id="humidity5" class="list-group-item">humidity</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="date5" class="card-header">
+          Date
+        </div>
+        <ul class="list-group list-group-flush">
+          <li  class="list-group-item"><img id="icon5" src="http://openweathermap.org/img/wn/01n@2x.png" width="40px" height="40px" alt=""></li>
+          <li id="temp5" class="list-group-item">temp</li>
+          <li id="wind5" class="list-group-item">wind</li>
+          <li id="humidity5" class="list-group-item">humidity</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="date5" class="card-header">
+          Date
+        </div>
+        <ul class="list-group list-group-flush">
+          <li  class="list-group-item"><img id="icon5" src="http://openweathermap.org/img/wn/01n@2x.png" width="40px" height="40px" alt=""></li>
+          <li id="temp5" class="list-group-item">temp</li>
+          <li id="wind5" class="list-group-item">wind</li>
+          <li id="humidity5" class="list-group-item">humidity</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="date5" class="card-header">
+          Date
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img id="icon5" src="http://openweathermap.org/img/wn/01n@2x.png" width="40px" height="40px" alt=""></li>
+          <li id="temp5" class="list-group-item">temp</li>
+          <li id="wind5" class="list-group-item">wind</li>
+          <li id="humidity5" class="list-group-item">humidity</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="date5" class="card-header">
+          Date
+        </div>
+        <ul class="list-group list-group-flush">
+          <li  class="list-group-item"><img id="icon5" src="http://openweathermap.org/img/wn/01n@2x.png" width="40px" height="40px" alt=""></li>
+          <li id="temp5" class="list-group-item">temp</li>
+          <li id="wind5" class="list-group-item">wind</li>
+          <li id="humidity5" class="list-group-item">humidity</li>
+        </ul>
+      </div>
+      
     </div>
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
-    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
   <script src="./assets/script.js"></script>
- 
+
 
 </html>
